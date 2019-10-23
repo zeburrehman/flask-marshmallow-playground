@@ -10,6 +10,6 @@ class Audit(Identity):
     __abstract__ = True
 
     created_by = db.Column(db.String)
-    created_on = db.Column(db.DateTime, auto_now_add=True)
+    created_on = db.Column(db.DateTime)
     modified_by = db.Column(db.String)
-    modified_on = db.Column(db.DateTime, auto_now_add=False)
+    modified_on = db.Column(db.DateTime)
