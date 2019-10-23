@@ -9,4 +9,4 @@ blueprint = Blueprint("api", __name__)
 api = Api(blueprint, '/v1')
 
 api.add_resource(user_controller, "/users/", "users")
-api.add_resource(user_id_controller, "/users/<string:id>", "user_details")
+api.add_resource(user_id_controller, "/users/<string:public_id>", "user_details")

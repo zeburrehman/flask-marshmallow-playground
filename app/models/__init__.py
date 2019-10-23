@@ -9,7 +9,7 @@ class Identity(db.Model):
 class Audit(Identity):
     __abstract__ = True
 
-    created_by = db.Column(db.String)
-    created_on = db.Column(db.DateTime)
+    created_by = db.Column(db.String, nullable=False)
+    created_on = db.Column(db.DateTime, nullable=False)
     modified_by = db.Column(db.String)
     modified_on = db.Column(db.DateTime)

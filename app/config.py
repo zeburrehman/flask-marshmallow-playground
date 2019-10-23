@@ -10,7 +10,7 @@ class TestingConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'SIB_Test.db')
 
 class DevelopmentConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'SIB_Dev.db')
+    SQLALCHEMY_DATABASE_URI = "postgres://postgres:Netsolpk1@localhost:5432/Marshmallow_DB" #'sqlite:///' + os.path.join(basedir, 'SIB_Dev.db')
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'SIB_Prod.db')
