@@ -3,7 +3,7 @@ from app import ma
 class UserSchema(ma.Schema):
     class Meta:
         # Fields to expose
-        fields = ("public_id", "email", "_links")
+        fields = ("public_id", "first_name", "last_name", "email", "_links")
 
     # Smart hyperlinking
     _links = ma.Hyperlinks(
